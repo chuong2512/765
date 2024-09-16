@@ -8,13 +8,7 @@ public class PlayerInput : MonoBehaviour
 
     private void Update()
     {
-#if UNITY_EDITOR
         GetInput();
-#endif
-
-#if UNITY_ANDROID
-        GetMobileInput();
-#endif
     }
 
     private void GetInput()
